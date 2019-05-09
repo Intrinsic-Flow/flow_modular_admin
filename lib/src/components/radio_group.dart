@@ -3,7 +3,7 @@ import 'dart:html';
 import 'package:angular/angular.dart';
 import 'package:ng_fontawesome/ng_fontawesome.dart';
 
-import 'package:ng_modular_admin/util.dart';
+import 'package:flow_modular_admin/util.dart';
 
 /// A container for a label and an input.
 @Component(
