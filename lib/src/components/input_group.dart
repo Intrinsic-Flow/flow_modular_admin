@@ -4,7 +4,7 @@ import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
 import 'package:ng_fontawesome/ng_fontawesome.dart';
 
-import 'package:ng_modular_admin/util.dart';
+import 'package:flow_modular_admin/util.dart';
 
 const INPUT_SEL = 'input[type=text],input[type=password],select,textarea';
 
@@ -13,7 +13,7 @@ const INPUT_SEL = 'input[type=text],input[type=password],select,textarea';
     selector: 'ma-input-group',
     templateUrl: 'input_group.html',
     styleUrls: const ['input_group.css'],
-    directives: const [CORE_DIRECTIVES, FaIcon]
+    directives: const [coreDirectives, FaIcon]
 )
 class InputGroup implements AfterContentInit, DoCheck {
     /// A form control for validating the element contained herein.
@@ -39,6 +39,8 @@ class InputGroup implements AfterContentInit, DoCheck {
 
     /// Reference to the host element.
     ElementRef host;
+    // HtmlElement host;
+
 
     /// Constructor.
     InputGroup(this.host);
